@@ -92,7 +92,7 @@ class AddEntry extends Component {
       return (
         <View>
           <Ionicons
-            name={'ios-happy-outline'}
+            name={'ios-happy'}
             size={100}
           />
           <Text>You already logged your information for today.</Text>

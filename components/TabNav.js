@@ -5,6 +5,7 @@ import History from './History';
 import { Platform } from 'react-native';
 import { purple, white } from '../utils/colors';
 import { FontAwesome, Ionicons } from '@expo/vector-icons';
+import Live from './Live';
 
 const router = {
   History: {
@@ -23,6 +24,13 @@ const router = {
         Platform.OS === 'ios' && <FontAwesome name="plus-square" size={30} color={tintColor} />,
     },
   },
+  Live: {
+    screen: Live,
+    navigationOptions: {
+      tabBarLabel: 'Live',
+      tabBarIcon: ({ tintColor }) => <Ionicons name='ios-speedometer' size={30} color={tintColor} />
+    }
+  },    
 };
 
 const navigationOptions = {
@@ -49,5 +57,7 @@ const TabNav =
   Platform.OS === 'ios'
     ? createBottomTabNavigator(router, navigationOptions)
     : createMaterialTopTabNavigator(router, navigationOptions);
+
+    
 
 export default createAppContainer(TabNav);

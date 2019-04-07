@@ -2,8 +2,8 @@
   "expoServerPort": 19000,
   "expoServerNgrokUrl": "https://ni-rid.anonymous.udacifitness.exp.direct",
   "packagerNgrokUrl": "https://packager.ni-rid.anonymous.udacifitness.exp.direct",
-  "ngrokPid": 11204,
+  "ngrokPid": 8084,
   "devToolsPort": 19002,
   "packagerPort": 19001,
-  "packagerPid": 15784
+  "packagerPid": 15748
 }

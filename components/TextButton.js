@@ -1,12 +1,11 @@
-
 import React from 'react'
 import { Text, TouchableOpacity, StyleSheet } from 'react-native'
 import { purple } from '../utils/colors';
 
-export default function TextButton ({ children, onPress }) {
+export default function TextButton ({ children, onPres, style = {} }) {
   return (
     <TouchableOpacity onPress={onPress}>
-      <Text style={styles.reset}>{children}</Text>
+      <Text style={[styles.reset, style]}>{children}</Text>
     </TouchableOpacity>
   )
 }

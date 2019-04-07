@@ -4,7 +4,7 @@ import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 import reducer from './reducers';
 import { Constants } from 'expo';
-import TabNav from './components/TabNav';
+import MainNav from './components/MainNav';
 import { purple } from './utils/colors';
 
 
@@ -23,7 +23,7 @@ export default class App extends React.Component {
       <Provider store={createStore(reducer)}>
         <View style={{ flex: 1}}>
           <UdaciStatusBar backgroundColor={purple} barStyle="light-content" />
-          <TabNav />
+          <MainNav />
         </View>
       </Provider>
     );

@@ -1,10 +1,10 @@
 {
   "devToolsPort": 19002,
   "expoServerPort": 19000,
-  "packagerPort": null,
-  "packagerPid": null,
+  "packagerPort": 19001,
+  "packagerPid": 8968,
   "expoServerNgrokUrl": "https://ni-rid.anonymous.udacifitness.exp.direct",
   "packagerNgrokUrl": "https://packager.ni-rid.anonymous.udacifitness.exp.direct",
-  "ngrokPid": 4872,
+  "ngrokPid": 13072,
   "webpackServerPort": null
 }

@@ -28,7 +28,8 @@ const router = {
     screen: Live,
     navigationOptions: {
       tabBarLabel: 'Live',
-      tabBarIcon: ({ tintColor }) => <Ionicons name='ios-speedometer' size={30} color={tintColor} />
+      tabBarIcon: ({ tintColor }) => 
+      Platform.OS === 'ios' &&<Ionicons name='ios-speedometer' size={30} color={tintColor} />
     }
   },    
 };

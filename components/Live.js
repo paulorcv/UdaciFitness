@@ -75,6 +75,11 @@ export default class Live extends Component {
           <Text>
             You denied your location. You can fix this by visiting your settings and enabling location services for this app.
           </Text>
+          <TouchableOpacity style={styles.button} onPress={this.askPermission}>
+            <Text style={styles.buttonText}>
+              Enable
+            </Text>
+          </TouchableOpacity>          
         </View>
       )
     }

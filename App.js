@@ -6,6 +6,8 @@ import reducer from './reducers';
 import { Constants } from 'expo';
 import MainNav from './components/MainNav';
 import { purple } from './utils/colors';
+import { setLocalNotification } from './utils/helpers'
+
 
 
 function UdaciStatusBar( { backgroundColor, ...props}){
@@ -18,6 +20,11 @@ function UdaciStatusBar( { backgroundColor, ...props}){
 
 
 export default class App extends React.Component {
+
+  componentDidMount() {
+    setLocalNotification()
+  }  
+
   render() {
     return (
       <Provider store={createStore(reducer)}>
